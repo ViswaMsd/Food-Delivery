@@ -1,0 +1,15 @@
+.header {
+  padding: 1rem 10rem;
+  background-color: var(--color-primary);
+  color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+   z-index: 2;
+  /* transform: translateZ(100); */
+}    

@@ -1,0 +1,16 @@
+.cart{
+    max-width: 80rem;
+    margin: 2rem auto;
+    
+    max-height: 30rem; 
+     overflow: scroll;
+
+    background-color: var(--color-primary-lightest);
+    color:var(--color-primary-dark)
+}
+
+.cart-overlay{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}

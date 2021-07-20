@@ -1,0 +1,15 @@
+.menu{
+    /* position: fixed; */
+    max-width: 80rem;
+    margin: 2rem auto;
+
+    background-color: var(--color-primary-lightest);
+    color:var(--color-primary-dark)
+}
+
+.status{
+    text-align: center;
+    font-size:large;
+    font-weight: 500;
+    color:seagreen;
+}

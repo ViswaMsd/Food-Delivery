@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import Cart from "./components/cart/Cart";
+import Header from "./components/header/Header";
+import ImageSection from "./components/header/ImageSection";
+import Menu from "./components/menu/Menu";
+import CartContext from "./contexts/CartContext";
 
 function App() {
+  console.log("App component loaded..!");
+  const ctx = useContext(CartContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {ctx.cartIsShown ? <Cart /> : <div></div>}
+      <div>
+        <Header></Header>
+        <ImageSection></ImageSection>
+        <Menu></Menu>
+      </div>
+    </>
   );
 }
 

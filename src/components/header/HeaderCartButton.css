@@ -1,0 +1,26 @@
+.cartButton{
+    color: var(--color-primary-lightest);
+    background-color: var(--color-primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    height: 2rem;
+    width: 2rem;
+    fill:var(--color-primary-lightest);
+    margin: 0 1rem;
+
+}
+.cart__label{
+    margin: 0 1rem;
+
+}
+.cart__notif{
+    background-color: var(--color-primary);
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: .5rem 1.5rem;
+    margin: 0 1rem;
+
+}
