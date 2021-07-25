@@ -20,24 +20,47 @@ function Cart() {
               <CartItem key={cartItem.id} cartItem={cartItem}></CartItem>
             ))}
         {ctx.cartItems.length === 0 ? (
-          <span>No items added to Cart</span>
+          <div
+            style={{
+              color: "var(--color-primary)",
+              textAlign: "center",
+              padding: "1rem 2rem",
+              fontWeight: "600",
+              fontSize: "2.5rem",
+            }}
+          >
+            No items added to Cart
+          </div>
         ) : (
-          <span>
+          <div
+            style={{
+              color: "var(--color-primary)",
+              textAlign: "center",
+              padding: "1rem 2rem",
+              fontWeight: "600",
+              fontSize: "2.5rem",
+            }}
+          >
+            Cart Value : $
             {ctx.cartItems
               .reduce((acc, item) => acc + item.price * item.count, 0)
               .toFixed(2)}
-          </span>
+          </div>
         )}
         <div className="control">
           <button
+            className="btn--cart"
             type="button"
             onClick={() => {
               ctx.cartHandler(false);
             }}
           >
-            Cancle
+            Back
           </button>
-          <button type="button">Order</button>
+
+          <button className="btn--cart" type="button">
+            Order
+          </button>
         </div>
       </Card>
     </Overlay>

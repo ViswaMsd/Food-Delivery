@@ -23,10 +23,11 @@ function MenuItem(props) {
           className="menu__item__right"
           onSubmit={(e) => {
             e.preventDefault();
-            ctx.addItem({ ...props.meal, count:+menuItemRef.current.value});
+            ctx.addItem({ ...props.meal, count: +menuItemRef.current.value });
           }}
         >
-          <Input ref={menuItemRef}
+          <Input
+            ref={menuItemRef}
             input={{
               id: `{props.key}`,
               type: "number",
@@ -34,11 +35,10 @@ function MenuItem(props) {
               max: "5",
               defaultValue: "1",
             }}
-            label="X"
+            label="✖"
           />
           <Button type="submit" className="btn--primary">
-            {" "}
-            + ADD{" "}
+            + ADD🛒
           </Button>
         </form>
       </div>

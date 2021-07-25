@@ -36,12 +36,11 @@ function Menu() {
     return () => {};
   }, []);
 
-  if (isLoading) return <p className='status'>Loading..</p>;
+  if (isLoading) return <p className="status">Loading..</p>;
   if (hasError) return <p className="status">{hasError}</p>;
 
   return (
     <Card className="menu">
-      
       {mealsList.map((meal) => {
         return <MenuItem key={meal.id} meal={meal} />;
       })}
