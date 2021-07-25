@@ -34,7 +34,7 @@ function Cart() {
         ) : (
           <div
             style={{
-              color: "var(--color-primary)",
+              color: "yellow",
               textAlign: "center",
               padding: "1rem 2rem",
               fontWeight: "600",
