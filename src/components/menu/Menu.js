@@ -9,7 +9,9 @@ function Menu() {
   const [hasError, setHasError] = useState(null);
 
   useEffect(() => {
-    fetch("https://meals-api-9190d-default-rtdb.firebaseio.com/meals.json")
+    fetch(
+      "https://food-delivery-api-a790f-default-rtdb.firebaseio.com/meals.json"
+    )
       .then((res) => {
         console.log(res);
         if (!res.ok)

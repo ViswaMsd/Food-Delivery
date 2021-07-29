@@ -35,3 +35,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  filter: opacity(0.85);
+}
+button:active {
+  filter: opacity(1);
+}

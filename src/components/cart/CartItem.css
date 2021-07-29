@@ -28,7 +28,7 @@ hr {
   margin: 1rem;
   border-radius: 1rem;
   color: var(--color-primary-lightest);
-  cursor: pointer;
+  /* cursor: pointer; */
   border: var(--color-primary-lightest) solid 2px;
   background-color: var(--color-primary-darkest);
 }
